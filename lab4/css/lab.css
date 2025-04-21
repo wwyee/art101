@@ -4,6 +4,10 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #b43668;
+    border: solid 2px #b43668;
     background-color: #fff2db;
   }
+
+#pseudocode {
+    width: 500px;
+}
