@@ -6,7 +6,7 @@
 make = "Tesla";
 model = "X";
 color = "White";
-year: 2016;
+year = 2016;
 
 // calculate
 age = 2025 - year;
