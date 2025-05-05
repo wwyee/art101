@@ -21,4 +21,4 @@ return nameSorted;
 }
 
 //output
-document.writeln("Here's your name: ", sortUserName(),"</br>")
+document.writeln("Here's your sorted name: ", sortUserName(),"</br>")
