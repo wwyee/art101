@@ -21,4 +21,5 @@ return nameSorted;
 }
 
 //output
-document.writeln("Here's your sorted name: ", sortUserName(),"</br>")
+var result = sortUserName()
+document.writeln("Here's your sorted name: ", result,"</br>")
