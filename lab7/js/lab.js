@@ -1,21 +1,24 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Lab7 - Functions
+// Author: Marisa Wong  
+// Date: 4 May 2025
 
 // Constants
 
 // Functions
+function sortUserName(){
+  var userName = window.prompt("Hi. Please tell me your name.");
+  console.log("userName= ", userName);
+var nameArray = userName.split('');
+console.log("nameArray = ", nameArray);
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+var nameArraySort = nameArray.sort();
+console.log("nameArraySort = ", nameArraySort);
+
+var nameSorted = nameArraySort.join('');
+console.log("nameSorted = ", nameSorted)
+
+return nameSorted;
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+//output
+document.writeln("Here's your name: ", sortUserName(),"</br>")
