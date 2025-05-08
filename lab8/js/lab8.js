@@ -16,7 +16,7 @@ function test(num){
 var mapResults = arr.map(test);
 console.log("Array*2= ", mapResults)
 
-var results = array.map(function(x){
+var results = arr.map(function(x){
   return x /2 + 10;
 })
 
