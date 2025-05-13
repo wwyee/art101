@@ -4,13 +4,27 @@
 .challenge {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 3px #ffffff;
+    background-color: #fffae8;
+  }
+
+.problems {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 3px #ffffff;
+    background-color: #fffae8;
+  }
+
+.results {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 3px #ffffff;
+    background-color: #fffae8;
   }
 
 .special {
-    background-color: rgb(250, 230, 240);
-    border: dotted 50px rgb(0, 13, 255);
-    color: rgb(207, 192, 255);
+    background-color: rgb(255, 232, 254);
+    border: dotted 50px rgb(145, 138, 245);
+    color: rgb(135, 140, 157);
     font-weight: bold;
 }
