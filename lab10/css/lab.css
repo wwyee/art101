@@ -7,3 +7,15 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+.text p {
+  display: inline-block;
+  max-width: 60%;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgb(252, 162, 162);
+  color: rgb(129, 65, 65);
+  font-family:monospace;
+  font-size: 0.8em;
+  }
