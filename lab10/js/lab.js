@@ -7,8 +7,8 @@
 // Functions
 
 function generateRandomText() {
-  const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-  const min = 3;
+  const text = "Praesent iaculis velit in lobortis sagittis. Fusce facilisis pretium enim sit amet accumsan. Duis nisi nulla, pellentesque ut blandit id, lacinia et sem. Sed sagittis leo eu erat posuere, ac pharetra diam condimentum. Nullam et nulla purus. Sed in turpis pharetra, lobortis erat sit amet, laoreet libero. Aliquam vel est nec felis efficitur vehicula et eget ligula. In hac habitasse platea dictumst. Sed sed tempus dolor, vitae dapibus libero.";
+  const min = 2;
   const max = 100;
   const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
   // Get a random starting index to slice the Lorem Ipsum text
