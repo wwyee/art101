@@ -1,28 +1,44 @@
-// index.js - This simple JavaScript/jQuery script appends new elements to an output div
+// index.js - Conditionals
 // Author: Marisa Wong
-// Date: 15 May 2025
+// Date: 21 May 2025
 
 // Constants
 
-// Functions
+// Functions - sorting
 
-function generateRandomText() {
-  const text = "Praesent iaculis velit in lobortis sagittis. Fusce facilisis pretium enim sit amet accumsan. Duis nisi nulla, pellentesque ut blandit id, lacinia et sem. Sed sagittis leo eu erat posuere, ac pharetra diam condimentum. Nullam et nulla purus. Sed in turpis pharetra, lobortis erat sit amet, laoreet libero. Aliquam vel est nec felis efficitur vehicula et eget ligula. In hac habitasse platea dictumst. Sed sed tempus dolor, vitae dapibus libero.";
-  const min = 2;
-  const max = 100;
-  const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
-  // Get a random starting index to slice the Lorem Ipsum text
-  const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
-  // Generate the random Lorem Ipsum-like text
-  return text.slice(randStart, randStart + randLen);
+function sortingHat(str){
+  let length = str.length;
+  let mod = length % 5;
+  let college = '';
+
+  if (mod == 0){
+    college = "Oakes/ Rachel Carson College ";
+  }
+  else if (mod == 1){
+    college = "Porter/ Kresge College";
+  }
+  else if (mod == 2){
+    college = "College 9/ John R. Lewis";
+  }
+  else if (mod == 3){
+    college = "Crown/ Merill College";
+  }
+    else if (mod == 4){
+    college = "Cowell/ Stevenson College";
+  }
+  return college;
 }
 
 // click listener for button
-$("#make-convo").click(function(){
+$("#button").click(function(){
+
+  let name = $("#input").val();
+  console.log(name);
+  let college = sortingHat(name);
+  console.log(college);
+
+  $("#output").html(
+    `<p style="font-size:18px; color:blue;">
+    The Sorting Hat has sorted you into ${college}.</p>`
+);
 });
-
-// get new fake dialogue
-const newText = generateRandomText();
-
-// append a new div to our output div
-$("#output").append('<div class="text"><p>' + newText + '</p></div>');
