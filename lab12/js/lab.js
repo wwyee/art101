@@ -38,7 +38,6 @@ $("#button").click(function(){
   console.log(college);
 
   $("#output").html(
-    `<p style="font-size:18px; color:blue;">
-    The Sorting Hat has sorted you into ${college}.</p>`
+    `<p>The Sorting Hat has sorted you into ${college}.</p>`
 );
 });
