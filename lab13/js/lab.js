@@ -1,28 +1,29 @@
-// index.js - This simple JavaScript/jQuery script appends new elements to an output div
+// index.js - Loops
 // Author: Marisa Wong
-// Date: 15 May 2025
+// Date: 26 May 2025
 
-// Constants
+function fizzBuzzBoom() {
+  let oneLongString = "";
 
-// Functions
+  for (let i = 1; i <= 200; i++) {
+    let str = "";
 
-function generateRandomText() {
-  const text = "Praesent iaculis velit in lobortis sagittis. Fusce facilisis pretium enim sit amet accumsan. Duis nisi nulla, pellentesque ut blandit id, lacinia et sem. Sed sagittis leo eu erat posuere, ac pharetra diam condimentum. Nullam et nulla purus. Sed in turpis pharetra, lobortis erat sit amet, laoreet libero. Aliquam vel est nec felis efficitur vehicula et eget ligula. In hac habitasse platea dictumst. Sed sed tempus dolor, vitae dapibus libero.";
-  const min = 2;
-  const max = 100;
-  const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
-  // Get a random starting index to slice the Lorem Ipsum text
-  const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
-  // Generate the random Lorem Ipsum-like text
-  return text.slice(randStart, randStart + randLen);
+    if (i % 3 === 0) str += "Fizz";
+    if (i % 5 === 0) str += "Buzz";
+    if (i % 7 === 0) str += "Boom";
+
+    if (str === "") {
+      str = i;
+    } else {
+      str = i + " " + str + "!";
+    }
+
+    oneLongString += str + "<br>";
+  }
+
+  // Output to the #output div
+  $("#output").html(oneLongString);
 }
 
-// click listener for button
-$("#make-convo").click(function(){
-});
-
-// get new fake dialogue
-const newText = generateRandomText();
-
-// append a new div to our output div
-$("#output").append('<div class="text"><p>' + newText + '</p></div>');
+// Call the function
+fizzBuzzBoom();
