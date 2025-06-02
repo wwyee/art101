@@ -4,7 +4,7 @@
 
 $('#getFortune').on('click', function () {
   $.ajax({
-    url: "http://www.yerkee.com/api/fortune",
+    url: "https://cors-anywhere.herokuapp.com/http://www.yerkee.com/api/fortune",
     data: {},
     type: "GET",
     dataType: "json",
