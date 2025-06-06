@@ -6,22 +6,21 @@
 // Using the core $.ajax() method
 $.ajax({
   url: "https://corsproxy.io/?https://xkcd.com/info.0.json",
-  data: {},
   type: "GET",
   dataType : "json",
   success: function(comicObj) {
-      // do stuff
       console.log(comicObj);
-      let title = data.title;
-      let num = data.num;
-      let alt = data.alt;
-      let imageUrl = data.img;
+      let title = comicObj.title;
+      let alt = comicObj.alt;
+      let imageUrl = comicObj.img;
+
+      $("#output-title").text(title);
+      $('#img').attr('src', imageUrl);
+      $('#img').attr('alt', alt);
+      $('#img').attr('title', alt);
   },
-
-
-  // What we do if the api call fails
+  
   error: function (jqXHR, textStatus, errorThrown) { 
-      // do stuff
       console.log("Error loading XKCD comic:", textStatus, errorThrown);
   }
 })
