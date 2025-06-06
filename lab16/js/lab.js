@@ -1,6 +1,6 @@
-// index.js - This simple JavaScript/jQuery script appends new elements to an output div
+// index.js - 
 // Author: Marisa Wong
-// Date: 15 May 2025
+// Date: 5 June 2025
 
 
 // Using the core $.ajax() method
